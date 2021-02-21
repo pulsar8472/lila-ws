@@ -18,11 +18,11 @@
             "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar",
             "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivemongo/reactivemongo_2.13/1.0.1/reactivemongo_2.13-1.0.1.jar",
             "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivemongo/reactivemongo-bson-api_2.13/1.0.1/reactivemongo-bson-api_2.13-1.0.1.jar",
-            "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivemongo/reactivemongo-shaded-native/1.0.1-linux-x86-64/reactivemongo-shaded-native-1.0.1-linux-x86-64.jar",
+            "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivemongo/reactivemongo-shaded-native/1.0.1-osx-x86-64/reactivemongo-shaded-native-1.0.1-osx-x86-64.jar",
             "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/lettuce/lettuce-core/5.3.5.RELEASE/lettuce-core-5.3.5.RELEASE.jar",
             "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-handler/4.1.56.Final/netty-handler-4.1.56.Final.jar",
             "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.56.Final/netty-codec-http-4.1.56.Final.jar",
-            "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport-native-epoll/4.1.56.Final/netty-transport-native-epoll-4.1.56.Final-linux-x86_64.jar",
+            "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport-native-kqueue/4.1.56.Final/netty-transport-native-kqueue-4.1.56.Final-osx-x86_64.jar",
             "/Users/billlasley/Library/Caches/Coursier/v1/https/raw.githubusercontent.com/ornicar/lila-maven/master/org/lichess/scalachess_2.13/10.1.1/scalachess_2.13-10.1.1.jar",
             "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_2.13/2.6.10/akka-actor-typed_2.13-2.6.10.jar",
             "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.13/2.6.10/akka-slf4j_2.13-2.6.10.jar",
@@ -181,7 +181,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+                "home": "/Users/billlasley/.jabba/jdk/adopt@1.11.0-9/Contents/Home",
                 "options": [
                     "-Duser.dir=/Users/billlasley/Documents/GitHub/lila-ws",
                     "-Xms32m",
@@ -248,17 +248,17 @@
                 {
                     "organization": "org.reactivemongo",
                     "name": "reactivemongo-shaded-native",
-                    "version": "1.0.1-linux-x86-64",
+                    "version": "1.0.1-osx-x86-64",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "reactivemongo-shaded-native",
-                            "path": "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivemongo/reactivemongo-shaded-native/1.0.1-linux-x86-64/reactivemongo-shaded-native-1.0.1-linux-x86-64.jar"
+                            "path": "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivemongo/reactivemongo-shaded-native/1.0.1-osx-x86-64/reactivemongo-shaded-native-1.0.1-osx-x86-64.jar"
                         },
                         {
                             "name": "reactivemongo-shaded-native",
                             "classifier": "sources",
-                            "path": "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivemongo/reactivemongo-shaded-native/1.0.1-linux-x86-64/reactivemongo-shaded-native-1.0.1-linux-x86-64-sources.jar"
+                            "path": "/Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivemongo/reactivemongo-shaded-native/1.0.1-osx-x86-64/reactivemongo-shaded-native-1.0.1-osx-x86-64-sources.jar"
                         }
                     ]
                 },

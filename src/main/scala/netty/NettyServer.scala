@@ -5,7 +5,7 @@ import com.typesafe.config.Config
 import com.typesafe.scalalogging.Logger
 import io.netty.bootstrap.ServerBootstrap
 import io.netty.channel.{ Channel, ChannelInitializer }
-import io.netty.channel.epoll.{ EpollEventLoopGroup, EpollServerSocketChannel }
+import io.netty.channel.kqueue.{ KQueueEventLoopGroup, KQueueServerSocketChannel }
 import io.netty.channel.nio.NioEventLoopGroup
 import io.netty.channel.socket.nio.NioServerSocketChannel
 import io.netty.handler.codec.http._
@@ -27,14 +27,14 @@ final class NettyServer(
     val useEpoll = config.getBoolean("netty.useEpoll")
 
     val bossGroup =
-      if (useEpoll) new EpollEventLoopGroup(1)
+      if (useEpoll) new KQueueEventLoopGroup(1)
       else new NioEventLoopGroup(1)
     val workerGroup =
-      if (useEpoll) new EpollEventLoopGroup
+      if (useEpoll) new KQueueEventLoopGroup
       else new NioEventLoopGroup
 
     val channelClz =
-      if (useEpoll) classOf[EpollServerSocketChannel]
+      if (useEpoll) classOf[KQueueServerSocketChannel]
       else classOf[NioServerSocketChannel]
 
     try {
