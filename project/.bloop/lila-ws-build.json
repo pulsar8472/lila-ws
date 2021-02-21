@@ -211,6 +211,7 @@
         "platform": {
             "name": "jvm",
             "config": {
+                "home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk/Contents/Home",
                 "options": [
                     "-Duser.dir=/Users/billlasley/Documents/GitHub/lila-ws/project"
                 ]

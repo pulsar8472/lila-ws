@@ -839,3 +839,196 @@ No more data in the server stdin, exiting...
 No more data in the server stdin, exiting...
 No more data in the server stdin, exiting...
 No more data in the server stdin, exiting...
+[0m2021.02.21 11:42:03 INFO  Started: Metals version 0.9.10 in workspace '/Users/billlasley/Documents/GitHub/lila-ws' for client vscode 1.53.2.[0m
+[0m2021.02.21 11:42:04 INFO  time: initialize in 1.58s[0m
+[0m2021.02.21 11:42:05 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/3k/kvy6ccz93zxddhpv764phbhh0000gn/T/bsp-launcher2856752284621988382/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.02.21 11:42:04 INFO  skipping build import with status 'Requested'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/3k/kvy6ccz93zxddhpv764phbhh0000gn/T/bsp-launcher2856752284621988382/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/3k/kvy6ccz93zxddhpv764phbhh0000gn/T/bsp-launcher2856752284621988382/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.21 11:42:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/billlasley/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.02.21 11:42:05 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...[0m
+2021.02.21 11:42:05 INFO  Attempting to connect to the build server...[0m
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/3k/kvy6ccz93zxddhpv764phbhh0000gn/T/bsp-launcher16077551030708666582/bsp.socket'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/3k/kvy6ccz93zxddhpv764phbhh0000gn/T/bsp-launcher7232592569698389369/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/3k/kvy6ccz93zxddhpv764phbhh0000gn/T/bsp-launcher16077551030708666582/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/3k/kvy6ccz93zxddhpv764phbhh0000gn/T/bsp-launcher16077551030708666582/bsp.socket...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/3k/kvy6ccz93zxddhpv764phbhh0000gn/T/bsp-launcher7232592569698389369/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/3k/kvy6ccz93zxddhpv764phbhh0000gn/T/bsp-launcher7232592569698389369/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.02.21 11:42:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/billlasley/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.02.21 11:42:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/billlasley/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.02.21 11:42:05 INFO  time: connected to build server in 0.33s[0m
+[0m2021.02.21 11:42:05 INFO  Connected to Build server v1.4.6-21-464e4ec4[0m
+[0m2021.02.21 11:42:11 ERROR unexpected error during source scanning
+java.nio.file.FileSystemNotFoundException: /Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivemongo/reactivemongo-shaded-native/1.0.1-linux-x86-64/reactivemongo-shaded-native-1.0.1-linux-x86-64-sources.jar
+	at jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:118)
+	at jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:109)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:337)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:286)
+	at scala.meta.internal.io.PlatformFileIO$.newFileSystem(PlatformFileIO.scala:104)
+	at scala.meta.internal.io.PlatformFileIO$.newJarFileSystem(PlatformFileIO.scala:100)
+	at scala.meta.internal.metals.JarTopLevels.getTopLevels(JarTopLevels.scala:34)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$addSourceJarSymbols$1(MetalsLanguageServer.scala:2252)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$addSourceJarTopLevels$1(OnDemandSymbolIndex.scala:101)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.tryRun(OnDemandSymbolIndex.scala:133)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.addSourceJarTopLevels(OnDemandSymbolIndex.scala:100)
+	at scala.meta.internal.metals.MetalsLanguageServer.addSourceJarSymbols(MetalsLanguageServer.scala:2251)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$5(MetalsLanguageServer.scala:2219)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$5$adapted(MetalsLanguageServer.scala:2210)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:985)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:984)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$2(MetalsLanguageServer.scala:2210)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$2$adapted(MetalsLanguageServer.scala:2209)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexDependencySources(MetalsLanguageServer.scala:2209)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$10(MetalsLanguageServer.scala:2155)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:2155)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:2049)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:2049)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+[0m
+[0m2021.02.21 11:42:11 ERROR unexpected error during source scanning
+java.nio.file.FileSystemNotFoundException: /Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.56.Final/netty-codec-http-4.1.56.Final-sources.jar
+	at jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:118)
+	at jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:109)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:337)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:286)
+	at scala.meta.internal.io.PlatformFileIO$.newFileSystem(PlatformFileIO.scala:104)
+	at scala.meta.internal.io.PlatformFileIO$.newJarFileSystem(PlatformFileIO.scala:100)
+	at scala.meta.internal.metals.JarTopLevels.getTopLevels(JarTopLevels.scala:34)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$addSourceJarSymbols$1(MetalsLanguageServer.scala:2252)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$addSourceJarTopLevels$1(OnDemandSymbolIndex.scala:101)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.tryRun(OnDemandSymbolIndex.scala:133)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.addSourceJarTopLevels(OnDemandSymbolIndex.scala:100)
+	at scala.meta.internal.metals.MetalsLanguageServer.addSourceJarSymbols(MetalsLanguageServer.scala:2251)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$5(MetalsLanguageServer.scala:2219)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$5$adapted(MetalsLanguageServer.scala:2210)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:985)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:984)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$2(MetalsLanguageServer.scala:2210)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$2$adapted(MetalsLanguageServer.scala:2209)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexDependencySources(MetalsLanguageServer.scala:2209)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$10(MetalsLanguageServer.scala:2155)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:2155)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:2049)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:2049)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+[0m
+[0m2021.02.21 11:42:11 ERROR unexpected error during source scanning
+java.nio.file.FileSystemNotFoundException: /Users/billlasley/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport-native-unix-common/4.1.56.Final/netty-transport-native-unix-common-4.1.56.Final-sources.jar
+	at jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:118)
+	at jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:109)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:337)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:286)
+	at scala.meta.internal.io.PlatformFileIO$.newFileSystem(PlatformFileIO.scala:104)
+	at scala.meta.internal.io.PlatformFileIO$.newJarFileSystem(PlatformFileIO.scala:100)
+	at scala.meta.internal.metals.JarTopLevels.getTopLevels(JarTopLevels.scala:34)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$addSourceJarSymbols$1(MetalsLanguageServer.scala:2252)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.$anonfun$addSourceJarTopLevels$1(OnDemandSymbolIndex.scala:101)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.tryRun(OnDemandSymbolIndex.scala:133)
+	at scala.meta.internal.mtags.OnDemandSymbolIndex.addSourceJarTopLevels(OnDemandSymbolIndex.scala:100)
+	at scala.meta.internal.metals.MetalsLanguageServer.addSourceJarSymbols(MetalsLanguageServer.scala:2251)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$5(MetalsLanguageServer.scala:2219)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$5$adapted(MetalsLanguageServer.scala:2210)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:985)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:984)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$2(MetalsLanguageServer.scala:2210)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexDependencySources$2$adapted(MetalsLanguageServer.scala:2209)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexDependencySources(MetalsLanguageServer.scala:2209)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$10(MetalsLanguageServer.scala:2155)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:2155)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:2049)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:2049)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+[0m
+[0m2021.02.21 11:42:11 INFO  time: indexed workspace in 5.97s[0m
+[0m2021.02.21 11:42:32 INFO  shutting down Metals[0m
+[0m2021.02.21 11:42:32 INFO  Shut down connection with build server.[0m
+[0m2021.02.21 11:42:32 INFO  Shut down connection with build server.[0m
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.02.21 11:42:32 INFO  No more data in the server stdin, exiting...Shut down connection with build server.
+[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
