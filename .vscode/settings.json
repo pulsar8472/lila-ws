@@ -1,5 +1,13 @@
 {
     "files.watcherExclude": {
         "**/target": true
-    }
+    },
+    "cSpell.words": [
+        "BSON",
+        "Epoll",
+        "instanciate",
+        "nowarn",
+        "sris",
+        "subprotocols"
+    ]
 }
